@@ -1,0 +1,21 @@
+.nav-link {
+    border: 2px solid gold;
+    color: blue;
+    background-color: lightcyan;
+    text-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.nav-link:hover {
+    border: 2px solid blue;
+    color: blueviolet;
+    background-color: cyan;
+}
+
+.nav-link:active {
+    opacity: 0.5;
+}
+
+.active {
+    border: 2px solid aqua;
+}

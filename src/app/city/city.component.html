@@ -1,0 +1,26 @@
+<h1>Városok</h1>
+<div class="filter mb-2">
+    <input type="text" placeholder="azonosító" class="form-control" [formControl]="cityFilter">
+</div>
+<table class="table table-success table-hover table-striped table-bordered table-sm table-responsive">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Azonosító</th>
+            <th>Energiaigény</th>
+            <th>Állapot</th>
+            <th>Helyszín</th>
+        </tr>
+    </thead>
+    @for(city of cityService.getSmartCityDevices() | cityfilter: cityFilter.value; track city.id) {
+        <tbody>
+            <tr>
+                <td>{{city.id}}</td>
+                <td>{{city.identifier}}</td>
+                <td>{{city.energyDemand}}</td>
+                <td>{{city.status}}</td>
+                <td>{{city.location}}</td>
+            </tr>
+        </tbody>
+    }
+</table>

@@ -1,0 +1,16 @@
+.filter input[type=text] {
+    border: 2px solid gold;
+    color: blueviolet;
+    background-color: lightcyan;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px gray;
+}
+
+table {
+    border: 2px solid gold;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px gray;
+}
